@@ -11,5 +11,5 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
 
     - name: MSBuild
-      run: msbuild msbuild_actions_sample.sln
+      run: msbuild ConsoleApp1.sln
       shell: cmd
