@@ -15,10 +15,11 @@ jobs:
       shell: cmd
 
     - name: MSBuild
-      run: msbuild ConsoleApp1.sln
+      run: msbuild ConsoleApp1.sln  -p:OutDir="out/"
       shell: cmd
 
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
         name: build-result
+        path: ./csci/out/
